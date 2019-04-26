@@ -1,0 +1,17 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+<h1>What do you want to vote on?</h1>
+<body class="body1">
+    {% if latest_question_list %}
+
+        <ul class="pie">
+        {% for question in latest_question_list %}
+        <li class="lipie"><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+        {% endfor %}
+        </ul>
+
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+</body>

@@ -1,0 +1,38 @@
+a {
+    color: green;
+}
+
+body {
+    background: lightgray url("images/background.gif") no-repeat;
+    text-align: center;
+}
+ul {
+    background-color: lightyellow;
+}
+.li2 {
+    color: black;
+    list-style: none;
+    text-align: left;
+    margin-top: 85px;
+}
+.pie {
+    background-color: lightgray;
+    margin-top: 25px;
+}
+.lipie {
+    list-style: disc;
+}
+.body1 {
+    text-align: left;
+}
+.sep1 {
+    margin-top: 15px;
+}
+.h1t {
+    color: white;
+    margin-bottom: 155px;
+}
+.bo1 {
+    background-color: grey;
+    margin-top: 125px;
+}
