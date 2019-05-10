@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+        {% load static %}
+
+    <head>
+        <title>Icy Thief's "Original" page</title>
+        <link rel="icon" href="{% static 'images/quack.ico' %}" type="x-icon/icon"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <meta name="google" content="notranslate" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous" />
+    </head>
+    {% block sidebar %}
+
+<style>
+        .card{
+            box-shadow: 0 16px 48px rgb(117, 161, 226) ;
+        }
+       
+</style>
+
+
+
+{% endblock sidebar %}
+
+    <body>
+        <style>
+            body {
+            font-family: "Roboto", sans-serif;
+            font-size: 17px;
+            background-color: skyblue;
+        }
+        .shadow {
+            box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+        }
+        .btn-danger {
+            color: skyblue;
+            background-color: blue;
+            border-color: black;
+        }
+        .masthead {
+            background: lightblue;
+            height: auto;
+            padding-bottom: 15px;
+            box-shadow: 0 16px 48px grey;
+            padding-top: 10px;
+        }
+        .container-fluid {
+            color: steelblue;
+        }
+        </style>
+
+        <!-- Navigation -->
+        <nav class="a" id="mainNav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'home' %}">Icy Thief's "Original" Page</a>
+            </div>
+        </nav>
+        {% block content %}
+        <!-- Content Goes here -->
+        {% endblock content %}
+        <!-- Footer -->
+        <footer class="py-3 bg-grey">
+            <p class="m-0 text-dark text-center ">Copyright &copy; Icy Thief</p>
+        </footer>
+    </body>
+</html>
